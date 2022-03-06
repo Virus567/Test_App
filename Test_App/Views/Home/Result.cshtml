@@ -1,0 +1,13 @@
+﻿@model UserBindingModel
+@{
+    ViewData["Title"] = "Result test app";
+}
+
+<form asp-controller="home" asp-action="result" class="text-center m-5">
+    <div class="m-1">
+        <input value="@ViewBag.result" class="w-75"/>
+    </div>
+    <div class="m-1">
+        <button class="btn-primary" type="submit">Назад</button>
+    </div>
+</form>

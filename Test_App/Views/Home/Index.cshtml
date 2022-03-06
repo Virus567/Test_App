@@ -1,0 +1,10 @@
+﻿@model UserBindingModel
+@{
+    ViewData["Title"] = "Test app";
+}
+
+<form asp-controller="home" asp-action="index" class="text-center m-5" method="post">
+    <input type="text" asp-for="UserName" placeholder="Введите пользователя" class="w-75" />
+    <button class="btn-primary" type="submit">Проверить</button>
+
+</form>
